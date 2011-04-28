@@ -11,10 +11,9 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
+import org.milyn.edi.unedifact.v41.V41Package;
 import org.milyn.edisax.model.EdifactModel;
-import org.milyn.edisax.unedifact.UNEdifactInterchangeParser.MappingRegistry;
-import org.mylin.ecore.model.EdimapAdapter;
-import org.mylin.ecore.model.envelope.EnvelopePackage;
+import org.milyn.edisax.unedifact.registry.MappingsRegistry;
 import org.xml.sax.SAXException;
 
 /**
@@ -27,13 +26,13 @@ import org.xml.sax.SAXException;
  * 
  */
 public class EDIPackageRegistry extends EPackageRegistryImpl implements
-		Registry, MappingRegistry {
+		Registry {
 
 	/**
 	 * UID
 	 */
 	private static final long serialVersionUID = -400421356940005210L;
-	
+
 	private EPackage cuscar;
 
 	private EPackage common;
@@ -41,9 +40,9 @@ public class EDIPackageRegistry extends EPackageRegistryImpl implements
 	public EDIPackageRegistry() {
 		super(EPackage.Registry.INSTANCE);
 		// We need to initialize EnvelopePackage
-		// so that it would register itself to 
+		// so that it would register itself to
 		// global package registry
-		EnvelopePackage.eINSTANCE.getNsPrefix();
+		V41Package.eINSTANCE.getNsPrefix();
 		try {
 			cuscar = loadModel("cuscar.ecore");
 		} catch (IOException e) {
@@ -85,7 +84,8 @@ public class EDIPackageRegistry extends EPackageRegistryImpl implements
 		if (nsURI != null && nsURI.endsWith("CUSCAR")) {
 			return cuscar;
 		}
-		if (nsURI != null && nsURI.equals("http://smooks.org/UNEDI/local/modelsetDefinitions")) {
+		if (nsURI != null
+				&& nsURI.equals("http://smooks.org/UNEDI/local/modelsetDefinitions")) {
 			return common;
 		}
 		return super.getEPackage(nsURI);
@@ -96,7 +96,8 @@ public class EDIPackageRegistry extends EPackageRegistryImpl implements
 		if (nsURI != null && nsURI.endsWith("CUSCAR")) {
 			return cuscar.getEFactoryInstance();
 		}
-		if (nsURI != null && nsURI.equals("http://smooks.org/UNEDI/local/modelsetDefinitions")) {
+		if (nsURI != null
+				&& nsURI.equals("http://smooks.org/UNEDI/local/modelsetDefinitions")) {
 			return common.getEFactoryInstance();
 		}
 		return super.getEFactory(nsURI);

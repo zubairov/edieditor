@@ -8,7 +8,7 @@ import org.eclipse.emf.ecore.xmi.XMLLoad;
 import org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl;
 import org.milyn.edisax.EDIParser;
 import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
-import org.milyn.edisax.unedifact.UNEdifactInterchangeParser.MappingRegistry;
+import org.milyn.edisax.unedifact.registry.MappingsRegistry;
 import org.xml.sax.SAXException;
 
 /**
@@ -19,9 +19,9 @@ import org.xml.sax.SAXException;
  */
 public class EDIXMLLoadl extends XMLLoadImpl implements XMLLoad {
 
-	private MappingRegistry reg;
+	private MappingsRegistry reg;
 
-	public EDIXMLLoadl(XMLHelper helper, UNEdifactInterchangeParser.MappingRegistry reg) {
+	public EDIXMLLoadl(XMLHelper helper, MappingsRegistry reg) {
 		super(helper);
 		this.reg = reg;
 	}
@@ -29,7 +29,8 @@ public class EDIXMLLoadl extends XMLLoadImpl implements XMLLoad {
 	@Override
 	protected SAXParser makeParser() throws ParserConfigurationException,
 			SAXException {
-		UNEdifactInterchangeParser parser = new UNEdifactInterchangeParser(reg);
+		UNEdifactInterchangeParser parser = new UNEdifactInterchangeParser();
+		parser.setMappingsRegistry(reg);
 		if (options.containsKey(EDIParser.FEATURE_IGNORE_NEWLINES)) {
 			parser.setFeature(EDIParser.FEATURE_IGNORE_NEWLINES, (Boolean) options.get(EDIParser.FEATURE_IGNORE_NEWLINES));
 		}

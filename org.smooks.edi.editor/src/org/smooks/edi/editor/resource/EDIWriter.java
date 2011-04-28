@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.milyn.ect.ecore.SmooksMetadata;
+import org.milyn.edi.unedifact.v41.UnEdifact;
 import org.milyn.edisax.model.internal.Delimiters;
 import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
 
@@ -29,7 +30,7 @@ public interface EDIWriter {
 	 * @param interchange
 	 * @throws IOException
 	 */
-	public void write(Writer out, UNEdifact interchange) throws IOException;
+	public void write(Writer out, UnEdifact interchange) throws IOException;
 
 	public static final EDIWriter INSTANCE = new EDIWriter() {
 
@@ -38,7 +39,7 @@ public interface EDIWriter {
 		/**
 		 * {@inheritDoc}
 		 */
-		public void write(Writer out, UNEdifact interchange) throws IOException {
+		public void write(Writer out, UnEdifact interchange) throws IOException {
 			Delimiters del = UNEdifactInterchangeParser.defaultUNEdifactDelimiters;
 			serializeGroup(interchange, del, out);
 		}

@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.xmi.DOMHandler;
 import org.eclipse.emf.ecore.xmi.XMLLoad;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
-import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
+import org.milyn.edi.unedifact.v41.DocumentRoot;
 import org.milyn.edisax.unedifact.registry.MappingsRegistry;
 import org.w3c.dom.Document;
 
