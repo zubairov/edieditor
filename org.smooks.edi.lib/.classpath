@@ -4,7 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="lib/milyn-commons-1.5-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="lib/milyn-edisax-parser-1.5-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/milyn-edisax-parser-1.5-SNAPSHOT.jar" sourcepath="/milyn-edisax-parser/src/main/java"/>
 	<classpathentry kind="lib" path="lib/milyn-smooks-core-1.5-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="lib/milyn-smooks-ect-1.5-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="lib/milyn-smooks-javabean-1.5-SNAPSHOT.jar"/>

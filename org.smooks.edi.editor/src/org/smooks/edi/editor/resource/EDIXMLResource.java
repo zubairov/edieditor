@@ -39,7 +39,7 @@ public class EDIXMLResource extends XMLResourceImpl {
 	
 	@Override
 	protected XMLLoad createXMLLoad() {
-		return new EDIXMLLoadl(createXMLHelper(), reg);
+		return new EDIXMLLoad(createXMLHelper(), reg);
 	}
 	
 	@Override

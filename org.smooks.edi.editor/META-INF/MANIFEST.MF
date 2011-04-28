@@ -12,12 +12,15 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.ecore.editor;bundle-version="2.6.0",
  org.eclipse.core.resources;bundle-version="3.6.0",
  org.eclipse.emf.ecore.xmi;bundle-version="2.5.0",
- org.smooks.edi.editor.model;bundle-version="1.0.0"
+ org.smooks.edi.editor.model;bundle-version="1.0.0",
+ org.smooks.edi.lib;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ClassPath: .
 Import-Package: org.milyn.ect,
+ org.milyn.ect.ecore,
  org.milyn.ect.formats.unedifact,
  org.milyn.edisax,
  org.milyn.edisax.model,
- org.milyn.edisax.unedifact
+ org.milyn.edisax.unedifact,
+ org.milyn.edisax.unedifact.registry
