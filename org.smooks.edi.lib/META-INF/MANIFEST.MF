@@ -11,10 +11,10 @@ Require-Bundle: org.eclipse.ui,
  org.apache.log4j;bundle-version="1.2.15"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: lib/milyn-edisax-parser-1.4-SNAPSHOT.jar,
- lib/milyn-smooks-core-1.4-SNAPSHOT.jar,
- lib/milyn-commons-1.4-SNAPSHOT.jar,
- lib/milyn-smooks-ect-1.4-SNAPSHOT.jar,
+Bundle-ClassPath: lib/milyn-edisax-parser-1.5-SNAPSHOT.jar,
+ lib/milyn-smooks-core-1.5-SNAPSHOT.jar,
+ lib/milyn-commons-1.5-SNAPSHOT.jar,
+ lib/milyn-smooks-ect-1.5-SNAPSHOT.jar,
  .
 Export-Package: org.milyn.archive,
  org.milyn.ect,
