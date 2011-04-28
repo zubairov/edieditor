@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.smooks.edi.editor/src"
+    modelPluginID="org.smooks.edi.editor" modelName="Envelope" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>../../milyn-edisax-parser/src/main/resources/META-INF/schema/v41-segments.xsd</foreignModel>
+  <genPackages prefix="V41" basePackage="org.milyn.edi.unedifact" resource="XML" disposableProviderFactory="true"
+      ecorePackage="v41.ecore#/">
+    <genClasses ecoreClass="v41.ecore#//Datetime">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Datetime/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Datetime/time"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference v41.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference v41.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//DocumentRoot/unEdifact"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Implementationguideline">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Implementationguideline/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Implementationguideline/versionNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Implementationguideline/releaseNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Implementationguideline/controllingAgencyCode"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//InterchangeMessageType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//InterchangeMessageType/uNH"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute v41.ecore#//InterchangeMessageType/any"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//InterchangeMessageType/uNT"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Messageidentifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageidentifier/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageidentifier/versionNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageidentifier/releaseNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageidentifier/controllingAgencyCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageidentifier/associationAssignedCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageidentifier/codeListDirVersionNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageidentifier/typeSubFunctionId"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Messageversion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageversion/versionNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageversion/releaseNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Messageversion/associationCode"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Recipient">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Recipient/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Recipient/codeQualifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Recipient/internalId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Recipient/internalSubId"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Recipientapp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Recipientapp/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Recipientapp/codeQualifier"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Recipientref">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Recipientref/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Recipientref/refQualifier"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Scenario">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Scenario/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Scenario/versionNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Scenario/releaseNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Scenario/controllingAgencyCode"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Sender">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Sender/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Sender/codeQualifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Sender/internalId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Sender/internalSubId"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Senderapp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Senderapp/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Senderapp/codeQualifier"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Subset">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Subset/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Subset/versionNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Subset/releaseNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Subset/controllingAgencyCode"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Syntaxidentifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Syntaxidentifier/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Syntaxidentifier/versionNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Syntaxidentifier/serviceCodeListDirVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Syntaxidentifier/codedCharacterEncoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Syntaxidentifier/releaseNum"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Transferstatus">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Transferstatus/sequence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Transferstatus/firstAndLast"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Unb">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unb/syntaxIdentifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unb/sender"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unb/recipient"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unb/dateTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unb/controlRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unb/recipientRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unb/applicationRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unb/processingPriorityCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unb/ackRequest"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unb/agreementId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unb/testIndicator"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Une">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Une/controlCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Une/groupRef"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//UnEdifact">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//UnEdifact/uNB"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//UnEdifact/interchangeMessage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//UnEdifact/uNZ"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Ung">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Ung/groupId"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Ung/senderApp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Ung/recipientApp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Ung/dateTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Ung/groupRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Ung/controllingAgencyCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Ung/messageVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Ung/applicationPassword"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Unh">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unh/messageRefNum"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unh/messageIdentifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unh/commonAccessRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unh/transferStatus"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unh/subset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unh/implementationGuideline"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference v41.ecore#//Unh/scenario"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Unt">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unt/segmentCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unt/messageRefNum"/>
+    </genClasses>
+    <genClasses ecoreClass="v41.ecore#//Unz">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unz/controlCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute v41.ecore#//Unz/controlRef"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

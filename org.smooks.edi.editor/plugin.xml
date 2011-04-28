@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.smooks.edi.editor.EDIEditor"
+            contributorClass="org.eclipse.emf.ecore.presentation.EcoreActionBarContributor"
+            default="true"
+            extensions="edi"
+            icon="icons/edi.gif"
+            id="org.smooks.edi.EDIEditor"
+            name="EDI Editor">
+      </editor>         
+   </extension>
+
+</plugin>
