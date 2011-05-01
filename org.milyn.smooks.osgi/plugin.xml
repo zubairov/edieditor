@@ -1,0 +1,3 @@
+<plugin>
+   <extension-point id="org.milyn.smooks.mapping" name="Smooks UN/EDIFACT Mapping file" schema="schema/org.milyn.smooks.mapping.exsd"/>
+</plugin>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry exported="true" kind="lib" path="lib/milyn-commons-1.5-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/milyn-commons-1.5-SNAPSHOT.jar" sourcepath="/milyn-commons/src/main/java"/>
 	<classpathentry exported="true" kind="lib" path="lib/milyn-edisax-parser-1.5-SNAPSHOT.jar" sourcepath="/milyn-edisax-parser/src/main/java"/>
 	<classpathentry exported="true" kind="lib" path="lib/milyn-smooks-core-1.5-SNAPSHOT.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/milyn-smooks-ect-1.5-SNAPSHOT.jar"/>

@@ -4,7 +4,6 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 import org.milyn.edisax.EDIParser;
-import org.milyn.edisax.unedifact.registry.LazyMappingsRegistry;
 import org.milyn.edisax.unedifact.registry.MappingsRegistry;
 
 /**
@@ -23,7 +22,7 @@ public class EDIFactResourceFactoryImpl extends ResourceFactoryImpl {
 	
 
 	public EDIFactResourceFactoryImpl() {
-		this.reg = new LazyMappingsRegistry();
+		this.reg = new EclipseMappingsRegistry();
 	}
 	
 	@Override
