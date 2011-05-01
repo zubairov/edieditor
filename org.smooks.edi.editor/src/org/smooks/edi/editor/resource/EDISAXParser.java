@@ -26,7 +26,7 @@ public class EDISAXParser extends SAXParser {
 	 * @param parser
 	 */
 	public EDISAXParser(XMLReader parser) {
-		this.parser = parser;
+		this.parser = new EDIXMLFilter(parser);
 	}
 	
 	/**
