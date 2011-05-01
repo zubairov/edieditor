@@ -4,6 +4,7 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 import org.milyn.edisax.EDIParser;
+import org.milyn.edisax.unedifact.registry.LazyMappingsRegistry;
 import org.milyn.edisax.unedifact.registry.MappingsRegistry;
 
 /**
@@ -21,8 +22,8 @@ public class EDIFactResourceFactoryImpl extends ResourceFactoryImpl {
     public static final String FEATURE_IGNORE_NEWLINES = EDIParser.FEATURE_IGNORE_NEWLINES;
 	
 
-	public EDIFactResourceFactoryImpl(MappingsRegistry registry) {
-		this.reg = registry;
+	public EDIFactResourceFactoryImpl() {
+		this.reg = new LazyMappingsRegistry();
 	}
 	
 	@Override
