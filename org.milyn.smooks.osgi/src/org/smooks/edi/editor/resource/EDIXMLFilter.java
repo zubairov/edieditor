@@ -50,4 +50,11 @@ public class EDIXMLFilter extends XMLFilterImpl {
 		super.startElement(uri, localName, qName, newAttrs);
 	}
 	
+	@Override
+	public void characters(char[] ch, int start, int length)
+			throws SAXException {
+		// TODO Auto-generated method stub
+		super.characters(ch, start, length);
+	}
+	
 }
