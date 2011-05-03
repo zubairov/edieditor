@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.xmi.DOMHandler;
 import org.eclipse.emf.ecore.xmi.XMLLoad;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
 import org.milyn.edi.unedifact.v41.DocumentRoot;
-import org.milyn.edisax.unedifact.registry.MappingsRegistry;
 import org.w3c.dom.Document;
 
 /**
@@ -23,23 +22,19 @@ import org.w3c.dom.Document;
  */
 public class EDIXMLResource extends XMLResourceImpl {
 
-	private MappingsRegistry reg;
-
 	private EDIWriter ediWriter = EDIWriter.INSTANCE;
 
 	public EDIXMLResource() {
 		super();
 	}
 	
-	public EDIXMLResource(URI uri, MappingsRegistry reg) {
+	public EDIXMLResource(URI uri) {
 		super(uri);
-		this.reg = reg;
 	}
-	
-	
+
 	@Override
 	protected XMLLoad createXMLLoad() {
-		return new EDIXMLLoad(createXMLHelper(), reg);
+		return new EDIXMLLoad(createXMLHelper(), getResourceSet().getPackageRegistry());
 	}
 	
 	@Override

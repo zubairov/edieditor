@@ -18,9 +18,12 @@ package org.smooks.edi.editor.resource;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.Collections;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.eclipse.core.runtime.IConfigurationElement;
 import org.eclipse.core.runtime.IExtension;
@@ -29,15 +32,20 @@ import org.eclipse.core.runtime.IExtensionRegistry;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.emf.common.CommonPlugin;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EPackage.Registry;
+import org.milyn.ect.EdiDirectory;
+import org.milyn.ect.ecore.ECoreGenerator;
 import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.model.EdifactModel;
+import org.milyn.edisax.model.internal.Edimap;
 import org.milyn.edisax.unedifact.registry.AbstractMappingsRegistry;
 import org.milyn.edisax.unedifact.registry.MappingsRegistry;
 import org.milyn.edisax.util.EDIUtils;
 import org.xml.sax.SAXException;
 
 /**
- * Specifica {@link MappingsRegistry} which is using Eclipse-specific discovery mechanisms
+ * Specific {@link MappingsRegistry} which is using Eclipse-specific discovery mechanisms
  * 
  * @author zubairov
  *
@@ -45,7 +53,19 @@ import org.xml.sax.SAXException;
 public class EclipseMappingsRegistry extends AbstractMappingsRegistry {
 
 	private static final String XML_CATALOG_CONTRIBUTIONS_EXTENSION_POINT = "org.eclipse.wst.xml.core.catalogContributions";
+
+	private Registry packageRegistry;
 	
+	/**
+	 * {@link MappingsRegistry} needs a reference of {@link Registry}
+	 * to register loaded models
+	 * 
+	 * @param reg
+	 */
+	public EclipseMappingsRegistry(Registry reg) {
+		this.packageRegistry = reg;
+	}
+
 	@Override
 	protected Map<String, EdifactModel> demandLoading(String[] nameComponents)
 			throws EDIConfigurationException, IOException, SAXException {
@@ -55,7 +75,6 @@ public class EclipseMappingsRegistry extends AbstractMappingsRegistry {
 		IExtensionRegistry registry = Platform.getExtensionRegistry();
 		IExtensionPoint ep = registry
 				.getExtensionPoint(XML_CATALOG_CONTRIBUTIONS_EXTENSION_POINT);
-		Map<String, EdifactModel> result = new LinkedHashMap<String, EdifactModel>();
 		if (ep != null) {
 			IExtension[] extensions = ep.getExtensions();
 			for (IExtension extension : extensions) {
@@ -68,8 +87,7 @@ public class EclipseMappingsRegistry extends AbstractMappingsRegistry {
 						String name = child.getAttribute("name");
 						if (uri != null && name != null) {
 							if (targetURI.equals(name)) {
-								loadModel(result, uri);
-								break;
+								return loadModel(uri);
 							}
 						}
 					}
@@ -81,10 +99,11 @@ public class EclipseMappingsRegistry extends AbstractMappingsRegistry {
 				}
 			}
 		}
-		return result;
+		return Collections.emptyMap();
 	}
 
-	private void loadModel(Map<String, EdifactModel> result, String uri) throws EDIConfigurationException, IOException, SAXException, URISyntaxException {
+	private Map<String, EdifactModel> loadModel(String uri) throws EDIConfigurationException, IOException, SAXException, URISyntaxException {
+		Map<String, EdifactModel> result = new LinkedHashMap<String, EdifactModel>();
 		URI platformURI = URI.createURI(uri);
 		if (platformURI.isPlatform()) {
 			String fragment = platformURI.segment(1);
@@ -92,7 +111,34 @@ public class EclipseMappingsRegistry extends AbstractMappingsRegistry {
 			URL url = new URL(CommonPlugin.resolve(modelListURI).toString());
 			List<String> mappingModelList = EDIUtils.getMappingModelList(url.openStream());
 			EDIUtils.loadMappingModels(result, new java.net.URI("/"), mappingModelList);
+			// Now we shall register ECORE models
+			EdiDirectory dir = createEDIDirectory(result);
+			Set<EPackage> packages = ECoreGenerator.INSTANCE.generatePackages(dir);
+			for (EPackage pkg : packages) {
+				EPackage.Registry.INSTANCE.put(pkg.getNsURI(), pkg);
+			}
 		}
+		return result;
+	}
+
+	/**
+	 * Creates a {@link EdiDirectory} instance based on the {@link Map}
+	 * 
+	 * @param models
+	 * @return
+	 */
+	private EdiDirectory createEDIDirectory(Map<String, EdifactModel> models) {
+		String commonModelName = EDIUtils.toLookupName(EDIUtils.MODEL_SET_DEFINITIONS_DESCRIPTION);
+		EdifactModel commonModel = models.get(commonModelName);
+		List<Edimap> restModels = new LinkedList<Edimap>();
+		Set<String> keys = models.keySet();
+		for (String key : keys) {
+			if (!commonModelName.equals(key)) {
+				EdifactModel edifactModel = models.get(key);
+				restModels.add(edifactModel.getEdimap());
+			}
+		}
+		return new EdiDirectory(commonModel.getEdimap(), restModels);
 	}
 
 

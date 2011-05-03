@@ -15,6 +15,7 @@ Import-Package: org.apache.commons.lang;version="2.1.0",
  org.eclipse.emf.ecore.util,
  org.eclipse.emf.ecore.xmi,
  org.eclipse.emf.ecore.xmi.impl,
+ org.eclipse.emf.ecore.xml.type,
  org.milyn.edi.unedifact.v41,
  org.milyn.edi.unedifact.v41.util
 Export-Package: org.milyn.ect.ecore,
