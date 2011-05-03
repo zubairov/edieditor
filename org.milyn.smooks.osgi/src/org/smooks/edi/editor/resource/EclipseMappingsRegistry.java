@@ -115,7 +115,7 @@ public class EclipseMappingsRegistry extends AbstractMappingsRegistry {
 			EdiDirectory dir = createEDIDirectory(result);
 			Set<EPackage> packages = ECoreGenerator.INSTANCE.generatePackages(dir);
 			for (EPackage pkg : packages) {
-				EPackage.Registry.INSTANCE.put(pkg.getNsURI(), pkg);
+				packageRegistry.put(pkg.getNsURI(), pkg);
 			}
 		}
 		return result;

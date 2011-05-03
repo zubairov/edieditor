@@ -132,19 +132,15 @@ public interface EDIWriter {
 					throw new IllegalArgumentException("Segment "
 							+ clazz.getName() + " could only contain fields");
 				}
+				if (compOut) {
+					out.write(del.getField());
+				}
+				compOut = true;
 				if (obj.eIsSet(feature)) {
-					if (compOut) {
-						// TODO Fix required/+ sign issue that non-required
-						// fields are
-						// not written as filled with empty
-						out.write(del.getField());
-					}
 					serializeField(obj.eGet(feature), del, out);
-					compOut = true;
 				}
 			}
 			out.write(del.getSegment());
-			// TODO Can we do newline here?
 			out.write("\n");
 		}
 
