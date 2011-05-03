@@ -38,6 +38,12 @@ public class CustomReflectiveItemProvider extends ReflectiveItemProvider {
 			if (metadata.isSegmentGroup(feature)) {
 				return label + " {" + ellipse(getSegmentGroupDescription(eClass)) + "}";
 			}
+			if (metadata.isField(feature) && eClass.getName().indexOf('_') > 0) {
+				String name = eClass.getName();
+				String refID = name.substring(name.lastIndexOf('_') + 1, name.length());
+				name = name.substring(0, name.lastIndexOf('_'));
+				return format(name, ' ') + " {" + refID + "}"; 
+			}
 		}
 		return super.getText(object);
 	}
