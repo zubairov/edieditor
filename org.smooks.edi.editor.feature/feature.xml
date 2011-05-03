@@ -2,7 +2,7 @@
 <feature
       id="org.smooks.edi.editor"
       label="Smoks EDI Editor Feature"
-      version="1.0.1.qualifier"
+      version="1.5.0.qualifier"
       os="aix,hpux,linux,macosx,qnx,solaris,win32"
       ws="carbon,cocoa,gtk,motif,photon,win32,wpf"
       arch="ia64,ia64_32,PA_RISC,ppc,sparc,x86,x86_64">
@@ -10,10 +10,11 @@
    <description url="http://www.example.com/description">
       Smooks-based EDI Editor.
 Release Notes:
-
+Version 1.5.0:
+- Migrated to the Smooks 1.5-SNAPSHOT
 Version 1.0.1:
-- Fixed issue with XML Schema files where two XML Schemas were stored within one XSD file
-
+- Fixed issue with XML Schema files where two XML Schemas were
+stored within one XSD file
 Version 1.0.0:
 - First release of the EDI Editor
 - Improved visualisation of the Segment Groups and Segments
@@ -520,6 +521,9 @@ That&apos;s all there is to it!
    </license>
 
    <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.apache.commons.lang" version="2.3.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.emf.ecore" version="2.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.emf" version="2.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.emf.codegen" version="2.5.0" match="greaterOrEqual"/>
@@ -527,207 +531,16 @@ That&apos;s all there is to it!
       <import feature="org.eclipse.emf.ecore" version="2.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.emf.ecore.edit" version="2.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.emf.ecore.editor" version="2.5.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="org.eclipse.emf.ecore.xmi"/>
-      <import plugin="org.apache.commons.logging" version="1.0.4" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.ui"/>
-      <import plugin="org.apache.commons.lang" version="2.3.0" match="greaterOrEqual"/>
-      <import plugin="org.apache.log4j" version="1.2.15" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.emf.ecore.editor" version="2.5.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.core.resources" version="3.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore.editor" version="2.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore.xmi" version="2.5.0" match="greaterOrEqual"/>
+      <import plugin="org.smooks.edi.editor.model" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.milyn.smooks.osgi"/>
+      <import feature="org.eclipse.wst.xml_core.feature" version="3.2.3.v201102160550-7C7OFXcF7RZHQKIkMxMsW_"/>
    </requires>
 
    <plugin
-         id="org.milyn.ecore"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d00a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d00b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d01b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d01c"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d02a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d02b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d03a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d03b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d04a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d04b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d05a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d05b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d06a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d06b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d07a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d07b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d08a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d08b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d09a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d09b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d97a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d97b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d98a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d98b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d98b"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d99a"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.milyn.edi.unedifact.mappings.d99b"
+         id="org.milyn.smooks.osgi"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -741,7 +554,7 @@ That&apos;s all there is to it!
          unpack="false"/>
 
    <plugin
-         id="org.smooks.edi.lib"
+         id="org.smooks.edi.editor.model"
          download-size="0"
          install-size="0"
          version="0.0.0"

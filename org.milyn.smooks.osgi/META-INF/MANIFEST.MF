@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Eclipse Placeholder for Smooks OSGi bundle
 Bundle-SymbolicName: org.milyn.smooks.osgi;singleton:=true
-Bundle-Version: 1.5.0.qualifier
+Bundle-Version: 1.5.0.SNAPSHOT
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.apache.commons.lang;version="2.1.0",
  org.apache.commons.logging;version="1.0.4",
