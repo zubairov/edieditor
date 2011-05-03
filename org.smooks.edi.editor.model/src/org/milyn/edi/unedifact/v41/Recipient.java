@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getRecipient()
  * @model extendedMetaData="name='Recipient' kind='elementOnly'"
+ *        annotation="smooks-mapping-data type='field' maxLength='1' minLength='0'"
  * @generated
  */
 public interface Recipient extends EObject {
@@ -40,6 +41,7 @@ public interface Recipient extends EObject {
 	 * @see #setId(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getRecipient_Id()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='id' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -67,6 +69,7 @@ public interface Recipient extends EObject {
 	 * @see #setCodeQualifier(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getRecipient_CodeQualifier()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='codeQualifier' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -94,6 +97,7 @@ public interface Recipient extends EObject {
 	 * @see #setInternalId(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getRecipient_InternalId()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='internalId' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -121,6 +125,7 @@ public interface Recipient extends EObject {
 	 * @see #setInternalSubId(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getRecipient_InternalSubId()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='internalSubId' namespace='##targetNamespace'"
 	 * @generated
 	 */

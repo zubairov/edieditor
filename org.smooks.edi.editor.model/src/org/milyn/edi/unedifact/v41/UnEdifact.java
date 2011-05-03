@@ -42,6 +42,7 @@ public interface UnEdifact extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnEdifact_UNB()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UNB' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data minOccurs='1' maxOccurs='1' type='segment' segcode='UNB'"
 	 * @generated
 	 */
 	Unb getUNB();
@@ -69,6 +70,7 @@ public interface UnEdifact extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnEdifact_InterchangeMessage()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='interchangeMessage' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data type='group'"
 	 * @generated
 	 */
 	EList<InterchangeMessageType> getInterchangeMessage();
@@ -86,6 +88,7 @@ public interface UnEdifact extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnEdifact_UNZ()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UNZ' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data minOccurs='1' maxOccurs='1' type='segment' segcode='UNZ'"
 	 * @generated
 	 */
 	Unz getUNZ();

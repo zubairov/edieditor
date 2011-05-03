@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getUnt()
  * @model extendedMetaData="name='Unt' kind='elementOnly'"
+ *        annotation="smooks-mapping-data segcode='UNT' segcodePattern='^UNT' truncable='true' ignoreUnmappedFields='false' description='UNT - Message Trailer' type='segment'"
  * @generated
  */
 public interface Unt extends EObject {
@@ -39,6 +40,7 @@ public interface Unt extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnt_SegmentCount()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='segmentCount' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getSegmentCount();
@@ -66,6 +68,7 @@ public interface Unt extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnt_MessageRefNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='messageRefNum' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getMessageRefNum();

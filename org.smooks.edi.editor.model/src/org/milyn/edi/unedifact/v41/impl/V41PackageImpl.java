@@ -1574,8 +1574,1016 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		createResource(eNS_URI);
 
 		// Create annotations
+		// smooks-mapping-data
+		createSmooksmappingdataAnnotations();
 		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
 		createExtendedMetaDataAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>smooks-mapping-data</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createSmooksmappingdataAnnotations() {
+		String source = "smooks-mapping-data";		
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "description.name", "unEdifact",
+			 "description.version", "4.1",
+			 "delimeters.segment", "\'",
+			 "delimeters.component", ":",
+			 "delimeters.field", "+",
+			 "delimeters.escape", "?",
+			 "delimeters.ignoreCLRF", "false"
+		   });			
+		addAnnotation
+		  (datetimeEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getDatetime_Date(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getDatetime_Time(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });									
+		addAnnotation
+		  (implementationguidelineEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getImplementationguideline_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getImplementationguideline_VersionNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getImplementationguideline_ReleaseNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getImplementationguideline_ControllingAgencyCode(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });					
+		addAnnotation
+		  (getInterchangeMessageType_UNH(), 
+		   source, 
+		   new String[] {
+			 "segcode", "UNH",
+			 "type", "segment"
+		   });			
+		addAnnotation
+		  (getInterchangeMessageType_Any(), 
+		   source, 
+		   new String[] {
+			 "type", "group"
+		   });			
+		addAnnotation
+		  (getInterchangeMessageType_UNT(), 
+		   source, 
+		   new String[] {
+			 "segcode", "UNT",
+			 "type", "segment"
+		   });			
+		addAnnotation
+		  (messageidentifierEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getMessageidentifier_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getMessageidentifier_VersionNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getMessageidentifier_ReleaseNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getMessageidentifier_ControllingAgencyCode(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getMessageidentifier_AssociationAssignedCode(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getMessageidentifier_CodeListDirVersionNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getMessageidentifier_TypeSubFunctionId(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (messageversionEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getMessageversion_VersionNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getMessageversion_ReleaseNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getMessageversion_AssociationCode(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (recipientEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getRecipient_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getRecipient_CodeQualifier(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getRecipient_InternalId(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getRecipient_InternalSubId(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (recipientappEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getRecipientapp_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getRecipientapp_CodeQualifier(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (recipientrefEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getRecipientref_Ref(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getRecipientref_RefQualifier(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (scenarioEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getScenario_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getScenario_VersionNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getScenario_ReleaseNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getScenario_ControllingAgencyCode(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (senderEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getSender_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSender_CodeQualifier(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSender_InternalId(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSender_InternalSubId(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (senderappEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getSenderapp_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSenderapp_CodeQualifier(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (subsetEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getSubset_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSubset_VersionNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSubset_ReleaseNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSubset_ControllingAgencyCode(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (syntaxidentifierEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getSyntaxidentifier_Id(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSyntaxidentifier_VersionNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSyntaxidentifier_ServiceCodeListDirVersion(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSyntaxidentifier_CodedCharacterEncoding(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getSyntaxidentifier_ReleaseNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (transferstatusEClass, 
+		   source, 
+		   new String[] {
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getTransferstatus_Sequence(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getTransferstatus_FirstAndLast(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "component",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (unbEClass, 
+		   source, 
+		   new String[] {
+			 "segcode", "UNB",
+			 "segcodePattern", "^UNB",
+			 "truncable", "true",
+			 "ignoreUnmappedFields", "false",
+			 "description", "UNB - Interchange Header",
+			 "type", "segment"
+		   });		
+		addAnnotation
+		  (getUnb_SyntaxIdentifier(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnb_Sender(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnb_Recipient(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnb_DateTime(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (getUnb_ControlRef(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getUnb_RecipientRef(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (getUnb_ApplicationRef(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnb_ProcessingPriorityCode(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnb_AckRequest(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnb_AgreementId(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnb_TestIndicator(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (uneEClass, 
+		   source, 
+		   new String[] {
+			 "segcode", "UNE",
+			 "segcodePattern", "^UNE",
+			 "truncable", "true",
+			 "ignoreUnmappedFields", "false",
+			 "description", "UNE - Group Trailer",
+			 "type", "segment"
+		   });			
+		addAnnotation
+		  (getUne_ControlCount(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUne_GroupRef(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (getUnEdifact_UNB(), 
+		   source, 
+		   new String[] {
+			 "minOccurs", "1",
+			 "maxOccurs", "1",
+			 "type", "segment",
+			 "segcode", "UNB"
+		   });			
+		addAnnotation
+		  (getUnEdifact_InterchangeMessage(), 
+		   source, 
+		   new String[] {
+			 "type", "group"
+		   });			
+		addAnnotation
+		  (getUnEdifact_UNZ(), 
+		   source, 
+		   new String[] {
+			 "minOccurs", "1",
+			 "maxOccurs", "1",
+			 "type", "segment",
+			 "segcode", "UNZ"
+		   });			
+		addAnnotation
+		  (ungEClass, 
+		   source, 
+		   new String[] {
+			 "segcode", "UNG",
+			 "segcodePattern", "^UNG",
+			 "truncable", "true",
+			 "ignoreUnmappedFields", "false",
+			 "description", "UNG - Group Header",
+			 "type", "segment"
+		   });			
+		addAnnotation
+		  (getUng_GroupId(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getUng_SenderApp(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUng_RecipientApp(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUng_DateTime(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (getUng_GroupRef(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUng_ControllingAgencyCode(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getUng_MessageVersion(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (getUng_ApplicationPassword(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (unhEClass, 
+		   source, 
+		   new String[] {
+			 "segcode", "UNH",
+			 "segcodePattern", "^UNH",
+			 "truncable", "true",
+			 "ignoreUnmappedFields", "false",
+			 "description", "UNH - Message Header",
+			 "type", "segment"
+		   });			
+		addAnnotation
+		  (getUnh_MessageRefNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getUnh_MessageIdentifier(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (getUnh_CommonAccessRef(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });		
+		addAnnotation
+		  (getUnh_TransferStatus(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnh_Subset(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnh_ImplementationGuideline(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnh_Scenario(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "false",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });				
+		addAnnotation
+		  (untEClass, 
+		   source, 
+		   new String[] {
+			 "segcode", "UNT",
+			 "segcodePattern", "^UNT",
+			 "truncable", "true",
+			 "ignoreUnmappedFields", "false",
+			 "description", "UNT - Message Trailer",
+			 "type", "segment"
+		   });			
+		addAnnotation
+		  (getUnt_SegmentCount(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnt_MessageRefNum(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (unzEClass, 
+		   source, 
+		   new String[] {
+			 "segcode", "UNZ",
+			 "segcodePattern", "^UNZ",
+			 "truncable", "true",
+			 "ignoreUnmappedFields", "false",
+			 "description", "UNZ - Interchange Trailer",
+			 "type", "segment"
+		   });			
+		addAnnotation
+		  (getUnz_ControlCount(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });			
+		addAnnotation
+		  (getUnz_ControlRef(), 
+		   source, 
+		   new String[] {
+			 "truncable", "true",
+			 "required", "true",
+			 "type", "field",
+			 "maxLength", "1",
+			 "minLength", "0"
+		   });
 	}
 
 	/**
@@ -1585,14 +2593,14 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 	 * @generated
 	 */
 	protected void createExtendedMetaDataAnnotations() {
-		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";		
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";			
 		addAnnotation
 		  (datetimeEClass, 
 		   source, 
 		   new String[] {
 			 "name", "Datetime",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getDatetime_Date(), 
 		   source, 
@@ -1600,7 +2608,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "date",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getDatetime_Time(), 
 		   source, 
@@ -1651,7 +2659,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Implementationguideline",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getImplementationguideline_Id(), 
 		   source, 
@@ -1659,7 +2667,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getImplementationguideline_VersionNum(), 
 		   source, 
@@ -1667,7 +2675,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "versionNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getImplementationguideline_ReleaseNum(), 
 		   source, 
@@ -1675,7 +2683,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "releaseNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getImplementationguideline_ControllingAgencyCode(), 
 		   source, 
@@ -1698,7 +2706,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "UNH",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getInterchangeMessageType_Any(), 
 		   source, 
@@ -1707,7 +2715,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "wildcards", "##any",
 			 "name", ":1",
 			 "processing", "lax"
-		   });		
+		   });			
 		addAnnotation
 		  (getInterchangeMessageType_UNT(), 
 		   source, 
@@ -1715,14 +2723,14 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "UNT",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (messageidentifierEClass, 
 		   source, 
 		   new String[] {
 			 "name", "Messageidentifier",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getMessageidentifier_Id(), 
 		   source, 
@@ -1730,7 +2738,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getMessageidentifier_VersionNum(), 
 		   source, 
@@ -1738,7 +2746,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "versionNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getMessageidentifier_ReleaseNum(), 
 		   source, 
@@ -1746,7 +2754,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "releaseNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getMessageidentifier_ControllingAgencyCode(), 
 		   source, 
@@ -1754,7 +2762,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "controllingAgencyCode",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getMessageidentifier_AssociationAssignedCode(), 
 		   source, 
@@ -1762,7 +2770,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "associationAssignedCode",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getMessageidentifier_CodeListDirVersionNum(), 
 		   source, 
@@ -1770,7 +2778,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "codeListDirVersionNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getMessageidentifier_TypeSubFunctionId(), 
 		   source, 
@@ -1785,7 +2793,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Messageversion",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getMessageversion_VersionNum(), 
 		   source, 
@@ -1793,7 +2801,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "versionNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getMessageversion_ReleaseNum(), 
 		   source, 
@@ -1801,7 +2809,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "releaseNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getMessageversion_AssociationCode(), 
 		   source, 
@@ -1816,7 +2824,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Recipient",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getRecipient_Id(), 
 		   source, 
@@ -1824,7 +2832,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getRecipient_CodeQualifier(), 
 		   source, 
@@ -1832,7 +2840,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "codeQualifier",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getRecipient_InternalId(), 
 		   source, 
@@ -1840,7 +2848,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "internalId",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getRecipient_InternalSubId(), 
 		   source, 
@@ -1855,7 +2863,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Recipientapp",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getRecipientapp_Id(), 
 		   source, 
@@ -1863,7 +2871,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getRecipientapp_CodeQualifier(), 
 		   source, 
@@ -1878,7 +2886,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Recipientref",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getRecipientref_Ref(), 
 		   source, 
@@ -1886,7 +2894,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "ref",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getRecipientref_RefQualifier(), 
 		   source, 
@@ -1901,7 +2909,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Scenario",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getScenario_Id(), 
 		   source, 
@@ -1909,7 +2917,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getScenario_VersionNum(), 
 		   source, 
@@ -1917,7 +2925,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "versionNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getScenario_ReleaseNum(), 
 		   source, 
@@ -1925,7 +2933,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "releaseNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getScenario_ControllingAgencyCode(), 
 		   source, 
@@ -1940,7 +2948,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Sender",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getSender_Id(), 
 		   source, 
@@ -1948,7 +2956,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSender_CodeQualifier(), 
 		   source, 
@@ -1956,7 +2964,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "codeQualifier",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSender_InternalId(), 
 		   source, 
@@ -1964,7 +2972,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "internalId",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSender_InternalSubId(), 
 		   source, 
@@ -1979,7 +2987,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Senderapp",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getSenderapp_Id(), 
 		   source, 
@@ -1987,7 +2995,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSenderapp_CodeQualifier(), 
 		   source, 
@@ -2002,7 +3010,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Subset",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getSubset_Id(), 
 		   source, 
@@ -2010,7 +3018,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSubset_VersionNum(), 
 		   source, 
@@ -2018,7 +3026,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "versionNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSubset_ReleaseNum(), 
 		   source, 
@@ -2026,7 +3034,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "releaseNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSubset_ControllingAgencyCode(), 
 		   source, 
@@ -2041,7 +3049,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Syntaxidentifier",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getSyntaxidentifier_Id(), 
 		   source, 
@@ -2049,7 +3057,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "id",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSyntaxidentifier_VersionNum(), 
 		   source, 
@@ -2057,7 +3065,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "versionNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSyntaxidentifier_ServiceCodeListDirVersion(), 
 		   source, 
@@ -2065,7 +3073,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "serviceCodeListDirVersion",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSyntaxidentifier_CodedCharacterEncoding(), 
 		   source, 
@@ -2073,7 +3081,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "codedCharacterEncoding",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getSyntaxidentifier_ReleaseNum(), 
 		   source, 
@@ -2088,7 +3096,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Transferstatus",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getTransferstatus_Sequence(), 
 		   source, 
@@ -2096,7 +3104,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "sequence",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getTransferstatus_FirstAndLast(), 
 		   source, 
@@ -2111,7 +3119,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Unb",
 			 "kind", "elementOnly"
-		   });		
+		   });				
 		addAnnotation
 		  (getUnb_SyntaxIdentifier(), 
 		   source, 
@@ -2119,7 +3127,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "syntaxIdentifier",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnb_Sender(), 
 		   source, 
@@ -2127,7 +3135,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "sender",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnb_Recipient(), 
 		   source, 
@@ -2135,7 +3143,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "recipient",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnb_DateTime(), 
 		   source, 
@@ -2151,7 +3159,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "controlRef",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });				
 		addAnnotation
 		  (getUnb_RecipientRef(), 
 		   source, 
@@ -2167,7 +3175,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "applicationRef",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnb_ProcessingPriorityCode(), 
 		   source, 
@@ -2175,7 +3183,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "processingPriorityCode",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnb_AckRequest(), 
 		   source, 
@@ -2183,7 +3191,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "ackRequest",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnb_AgreementId(), 
 		   source, 
@@ -2191,7 +3199,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "agreementId",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnb_TestIndicator(), 
 		   source, 
@@ -2199,14 +3207,14 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "testIndicator",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (uneEClass, 
 		   source, 
 		   new String[] {
 			 "name", "Une",
 			 "kind", "elementOnly"
-		   });		
+		   });			
 		addAnnotation
 		  (getUne_ControlCount(), 
 		   source, 
@@ -2214,7 +3222,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "controlCount",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUne_GroupRef(), 
 		   source, 
@@ -2222,7 +3230,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "groupRef",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (unEdifactEClass, 
 		   source, 
@@ -2237,7 +3245,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "UNB",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnEdifact_InterchangeMessage(), 
 		   source, 
@@ -2245,7 +3253,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "interchangeMessage",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnEdifact_UNZ(), 
 		   source, 
@@ -2253,14 +3261,14 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "UNZ",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (ungEClass, 
 		   source, 
 		   new String[] {
 			 "name", "Ung",
 			 "kind", "elementOnly"
-		   });		
+		   });			
 		addAnnotation
 		  (getUng_GroupId(), 
 		   source, 
@@ -2268,7 +3276,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "groupId",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });				
 		addAnnotation
 		  (getUng_SenderApp(), 
 		   source, 
@@ -2276,7 +3284,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "senderApp",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUng_RecipientApp(), 
 		   source, 
@@ -2284,7 +3292,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "recipientApp",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUng_DateTime(), 
 		   source, 
@@ -2300,7 +3308,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "groupRef",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUng_ControllingAgencyCode(), 
 		   source, 
@@ -2308,7 +3316,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "controllingAgencyCode",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });				
 		addAnnotation
 		  (getUng_MessageVersion(), 
 		   source, 
@@ -2324,14 +3332,14 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "applicationPassword",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (unhEClass, 
 		   source, 
 		   new String[] {
 			 "name", "Unh",
 			 "kind", "elementOnly"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnh_MessageRefNum(), 
 		   source, 
@@ -2339,7 +3347,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "messageRefNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });				
 		addAnnotation
 		  (getUnh_MessageIdentifier(), 
 		   source, 
@@ -2355,7 +3363,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "commonAccessRef",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });				
 		addAnnotation
 		  (getUnh_TransferStatus(), 
 		   source, 
@@ -2363,7 +3371,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "transferStatus",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnh_Subset(), 
 		   source, 
@@ -2371,7 +3379,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "subset",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnh_ImplementationGuideline(), 
 		   source, 
@@ -2379,7 +3387,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "implementationGuideline",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnh_Scenario(), 
 		   source, 
@@ -2394,7 +3402,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 		   new String[] {
 			 "name", "Unt",
 			 "kind", "elementOnly"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnt_SegmentCount(), 
 		   source, 
@@ -2402,7 +3410,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "segmentCount",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnt_MessageRefNum(), 
 		   source, 
@@ -2410,14 +3418,14 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "messageRefNum",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (unzEClass, 
 		   source, 
 		   new String[] {
 			 "name", "Unz",
 			 "kind", "elementOnly"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnz_ControlCount(), 
 		   source, 
@@ -2425,7 +3433,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "controlCount",
 			 "namespace", "##targetNamespace"
-		   });		
+		   });			
 		addAnnotation
 		  (getUnz_ControlRef(), 
 		   source, 
@@ -2433,7 +3441,7 @@ public class V41PackageImpl extends EPackageImpl implements V41Package {
 			 "kind", "element",
 			 "name", "controlRef",
 			 "namespace", "##targetNamespace"
-		   });
+		   });	
 	}
 
 } //V41PackageImpl

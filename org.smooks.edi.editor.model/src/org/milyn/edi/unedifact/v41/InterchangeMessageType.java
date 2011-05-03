@@ -42,6 +42,7 @@ public interface InterchangeMessageType extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getInterchangeMessageType_UNH()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UNH' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data segcode='UNH' type='segment'"
 	 * @generated
 	 */
 	Unh getUNH();
@@ -69,6 +70,7 @@ public interface InterchangeMessageType extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getInterchangeMessageType_Any()
 	 * @model dataType="org.eclipse.emf.ecore.EFeatureMapEntry" required="true" many="false"
 	 *        extendedMetaData="kind='elementWildcard' wildcards='##any' name=':1' processing='lax'"
+	 *        annotation="smooks-mapping-data type='group'"
 	 * @generated
 	 */
 	FeatureMap getAny();
@@ -86,6 +88,7 @@ public interface InterchangeMessageType extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getInterchangeMessageType_UNT()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UNT' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data segcode='UNT' type='segment'"
 	 * @generated
 	 */
 	Unt getUNT();

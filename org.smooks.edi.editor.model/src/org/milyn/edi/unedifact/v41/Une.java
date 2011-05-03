@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getUne()
  * @model extendedMetaData="name='Une' kind='elementOnly'"
+ *        annotation="smooks-mapping-data segcode='UNE' segcodePattern='^UNE' truncable='true' ignoreUnmappedFields='false' description='UNE - Group Trailer' type='segment'"
  * @generated
  */
 public interface Une extends EObject {
@@ -39,6 +40,7 @@ public interface Une extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUne_ControlCount()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='controlCount' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getControlCount();
@@ -66,6 +68,7 @@ public interface Une extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUne_GroupRef()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='groupRef' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getGroupRef();

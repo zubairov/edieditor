@@ -169,6 +169,10 @@
         <details key="name" value="UNH"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
+      <eAnnotations source="smooks-mapping-data">
+        <details key="segcode" value="UNH"/>
+        <details key="type" value="segment"/>
+      </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="any" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -177,6 +181,9 @@
         <details key="name" value=":1"/>
         <details key="processing" value="lax"/>
       </eAnnotations>
+      <eAnnotations source="smooks-mapping-data">
+        <details key="type" value="group"/>
+      </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="uNT" lowerBound="1" eType="#//Unt"
         containment="true" resolveProxies="false">
@@ -184,6 +191,10 @@
         <details key="kind" value="element"/>
         <details key="name" value="UNT"/>
         <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="smooks-mapping-data">
+        <details key="segcode" value="UNT"/>
+        <details key="type" value="segment"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -1111,6 +1122,9 @@
         <details key="kind" value="element"/>
         <details key="name" value="interchangeMessage"/>
         <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+      <eAnnotations source="smooks-mapping-data">
+        <details key="type" value="group"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="uNZ" lowerBound="1" eType="#//Unz"

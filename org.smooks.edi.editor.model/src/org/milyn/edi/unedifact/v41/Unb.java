@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getUnb()
  * @model extendedMetaData="name='Unb' kind='elementOnly'"
+ *        annotation="smooks-mapping-data segcode='UNB' segcodePattern='^UNB' truncable='true' ignoreUnmappedFields='false' description='UNB - Interchange Header' type='segment'"
  * @generated
  */
 public interface Unb extends EObject {
@@ -47,6 +48,7 @@ public interface Unb extends EObject {
 	 * @see #setSyntaxIdentifier(Syntaxidentifier)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_SyntaxIdentifier()
 	 * @model containment="true" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='syntaxIdentifier' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -74,6 +76,7 @@ public interface Unb extends EObject {
 	 * @see #setSender(Sender)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_Sender()
 	 * @model containment="true" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='sender' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -101,6 +104,7 @@ public interface Unb extends EObject {
 	 * @see #setRecipient(Recipient)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_Recipient()
 	 * @model containment="true" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='recipient' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -128,6 +132,7 @@ public interface Unb extends EObject {
 	 * @see #setDateTime(Datetime)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_DateTime()
 	 * @model containment="true" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='dateTime' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -156,6 +161,7 @@ public interface Unb extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_ControlRef()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='controlRef' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getControlRef();
@@ -182,6 +188,7 @@ public interface Unb extends EObject {
 	 * @see #setRecipientRef(Recipientref)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_RecipientRef()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='recipientRef' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -210,6 +217,7 @@ public interface Unb extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_ApplicationRef()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='applicationRef' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getApplicationRef();
@@ -237,6 +245,7 @@ public interface Unb extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_ProcessingPriorityCode()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='processingPriorityCode' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getProcessingPriorityCode();
@@ -264,6 +273,7 @@ public interface Unb extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_AckRequest()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='ackRequest' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getAckRequest();
@@ -291,6 +301,7 @@ public interface Unb extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_AgreementId()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='agreementId' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getAgreementId();
@@ -318,6 +329,7 @@ public interface Unb extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnb_TestIndicator()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='testIndicator' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getTestIndicator();

@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getDatetime()
  * @model extendedMetaData="name='Datetime' kind='elementOnly'"
+ *        annotation="smooks-mapping-data type='field' maxLength='1' minLength='0'"
  * @generated
  */
 public interface Datetime extends EObject {
@@ -38,6 +39,7 @@ public interface Datetime extends EObject {
 	 * @see #setDate(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getDatetime_Date()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='date' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -65,6 +67,7 @@ public interface Datetime extends EObject {
 	 * @see #setTime(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getDatetime_Time()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='time' namespace='##targetNamespace'"
 	 * @generated
 	 */

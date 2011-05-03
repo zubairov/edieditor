@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getMessageidentifier()
  * @model extendedMetaData="name='Messageidentifier' kind='elementOnly'"
+ *        annotation="smooks-mapping-data type='field' maxLength='1' minLength='0'"
  * @generated
  */
 public interface Messageidentifier extends EObject {
@@ -43,6 +44,7 @@ public interface Messageidentifier extends EObject {
 	 * @see #setId(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageidentifier_Id()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='id' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -70,6 +72,7 @@ public interface Messageidentifier extends EObject {
 	 * @see #setVersionNum(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageidentifier_VersionNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='versionNum' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -97,6 +100,7 @@ public interface Messageidentifier extends EObject {
 	 * @see #setReleaseNum(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageidentifier_ReleaseNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='releaseNum' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -124,6 +128,7 @@ public interface Messageidentifier extends EObject {
 	 * @see #setControllingAgencyCode(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageidentifier_ControllingAgencyCode()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='controllingAgencyCode' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -151,6 +156,7 @@ public interface Messageidentifier extends EObject {
 	 * @see #setAssociationAssignedCode(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageidentifier_AssociationAssignedCode()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='associationAssignedCode' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -178,6 +184,7 @@ public interface Messageidentifier extends EObject {
 	 * @see #setCodeListDirVersionNum(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageidentifier_CodeListDirVersionNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='codeListDirVersionNum' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -205,6 +212,7 @@ public interface Messageidentifier extends EObject {
 	 * @see #setTypeSubFunctionId(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageidentifier_TypeSubFunctionId()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='typeSubFunctionId' namespace='##targetNamespace'"
 	 * @generated
 	 */

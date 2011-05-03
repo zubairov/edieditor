@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getMessageversion()
  * @model extendedMetaData="name='Messageversion' kind='elementOnly'"
+ *        annotation="smooks-mapping-data type='field' maxLength='1' minLength='0'"
  * @generated
  */
 public interface Messageversion extends EObject {
@@ -39,6 +40,7 @@ public interface Messageversion extends EObject {
 	 * @see #setVersionNum(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageversion_VersionNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='versionNum' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -66,6 +68,7 @@ public interface Messageversion extends EObject {
 	 * @see #setReleaseNum(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageversion_ReleaseNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='releaseNum' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -93,6 +96,7 @@ public interface Messageversion extends EObject {
 	 * @see #setAssociationCode(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getMessageversion_AssociationCode()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='associationCode' namespace='##targetNamespace'"
 	 * @generated
 	 */

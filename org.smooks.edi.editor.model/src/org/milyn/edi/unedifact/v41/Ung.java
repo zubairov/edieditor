@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getUng()
  * @model extendedMetaData="name='Ung' kind='elementOnly'"
+ *        annotation="smooks-mapping-data segcode='UNG' segcodePattern='^UNG' truncable='true' ignoreUnmappedFields='false' description='UNG - Group Header' type='segment'"
  * @generated
  */
 public interface Ung extends EObject {
@@ -45,6 +46,7 @@ public interface Ung extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUng_GroupId()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='groupId' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getGroupId();
@@ -71,6 +73,7 @@ public interface Ung extends EObject {
 	 * @see #setSenderApp(Senderapp)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUng_SenderApp()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='senderApp' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -98,6 +101,7 @@ public interface Ung extends EObject {
 	 * @see #setRecipientApp(Recipientapp)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUng_RecipientApp()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='recipientApp' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -125,6 +129,7 @@ public interface Ung extends EObject {
 	 * @see #setDateTime(Datetime)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUng_DateTime()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='dateTime' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -153,6 +158,7 @@ public interface Ung extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUng_GroupRef()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='groupRef' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getGroupRef();
@@ -180,6 +186,7 @@ public interface Ung extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUng_ControllingAgencyCode()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='controllingAgencyCode' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getControllingAgencyCode();
@@ -206,6 +213,7 @@ public interface Ung extends EObject {
 	 * @see #setMessageVersion(Messageversion)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUng_MessageVersion()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='messageVersion' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -234,6 +242,7 @@ public interface Ung extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUng_ApplicationPassword()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='applicationPassword' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getApplicationPassword();

@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see org.milyn.edi.unedifact.v41.V41Factory
  * @model kind="package"
+ *        annotation="smooks-mapping-data description.name='unEdifact' description.version='4.1' delimeters.segment='\'' delimeters.component=':' delimeters.field='+' delimeters.escape='?' delimeters.ignoreCLRF='false'"
  * @generated
  */
 public interface V41Package extends EPackage {

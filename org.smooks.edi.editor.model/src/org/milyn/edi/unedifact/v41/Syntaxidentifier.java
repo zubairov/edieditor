@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getSyntaxidentifier()
  * @model extendedMetaData="name='Syntaxidentifier' kind='elementOnly'"
+ *        annotation="smooks-mapping-data type='field' maxLength='1' minLength='0'"
  * @generated
  */
 public interface Syntaxidentifier extends EObject {
@@ -41,6 +42,7 @@ public interface Syntaxidentifier extends EObject {
 	 * @see #setId(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getSyntaxidentifier_Id()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='id' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -68,6 +70,7 @@ public interface Syntaxidentifier extends EObject {
 	 * @see #setVersionNum(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getSyntaxidentifier_VersionNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='versionNum' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -95,6 +98,7 @@ public interface Syntaxidentifier extends EObject {
 	 * @see #setServiceCodeListDirVersion(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getSyntaxidentifier_ServiceCodeListDirVersion()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='serviceCodeListDirVersion' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -122,6 +126,7 @@ public interface Syntaxidentifier extends EObject {
 	 * @see #setCodedCharacterEncoding(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getSyntaxidentifier_CodedCharacterEncoding()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='codedCharacterEncoding' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -149,6 +154,7 @@ public interface Syntaxidentifier extends EObject {
 	 * @see #setReleaseNum(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getSyntaxidentifier_ReleaseNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='releaseNum' namespace='##targetNamespace'"
 	 * @generated
 	 */

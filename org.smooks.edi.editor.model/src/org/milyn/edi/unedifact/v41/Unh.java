@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getUnh()
  * @model extendedMetaData="name='Unh' kind='elementOnly'"
+ *        annotation="smooks-mapping-data segcode='UNH' segcodePattern='^UNH' truncable='true' ignoreUnmappedFields='false' description='UNH - Message Header' type='segment'"
  * @generated
  */
 public interface Unh extends EObject {
@@ -44,6 +45,7 @@ public interface Unh extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnh_MessageRefNum()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='messageRefNum' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getMessageRefNum();
@@ -70,6 +72,7 @@ public interface Unh extends EObject {
 	 * @see #setMessageIdentifier(Messageidentifier)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnh_MessageIdentifier()
 	 * @model containment="true" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='messageIdentifier' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -98,6 +101,7 @@ public interface Unh extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnh_CommonAccessRef()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
 	 *        extendedMetaData="kind='element' name='commonAccessRef' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getCommonAccessRef();
@@ -124,6 +128,7 @@ public interface Unh extends EObject {
 	 * @see #setTransferStatus(Transferstatus)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnh_TransferStatus()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='transferStatus' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -151,6 +156,7 @@ public interface Unh extends EObject {
 	 * @see #setSubset(Subset)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnh_Subset()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='subset' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -178,6 +184,7 @@ public interface Unh extends EObject {
 	 * @see #setImplementationGuideline(Implementationguideline)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnh_ImplementationGuideline()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='implementationGuideline' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -205,6 +212,7 @@ public interface Unh extends EObject {
 	 * @see #setScenario(Scenario)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnh_Scenario()
 	 * @model containment="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='field' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='scenario' namespace='##targetNamespace'"
 	 * @generated
 	 */

@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getUnz()
  * @model extendedMetaData="name='Unz' kind='elementOnly'"
+ *        annotation="smooks-mapping-data segcode='UNZ' segcodePattern='^UNZ' truncable='true' ignoreUnmappedFields='false' description='UNZ - Interchange Trailer' type='segment'"
  * @generated
  */
 public interface Unz extends EObject {
@@ -39,6 +40,7 @@ public interface Unz extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnz_ControlCount()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='controlCount' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getControlCount();
@@ -66,6 +68,7 @@ public interface Unz extends EObject {
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getUnz_ControlRef()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 *        extendedMetaData="kind='element' name='controlRef' namespace='##targetNamespace'"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='field' maxLength='1' minLength='0'"
 	 * @generated
 	 */
 	String getControlRef();

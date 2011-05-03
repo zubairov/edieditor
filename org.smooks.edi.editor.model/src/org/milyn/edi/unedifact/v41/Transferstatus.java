@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see org.milyn.edi.unedifact.v41.V41Package#getTransferstatus()
  * @model extendedMetaData="name='Transferstatus' kind='elementOnly'"
+ *        annotation="smooks-mapping-data type='field' maxLength='1' minLength='0'"
  * @generated
  */
 public interface Transferstatus extends EObject {
@@ -38,6 +39,7 @@ public interface Transferstatus extends EObject {
 	 * @see #setSequence(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getTransferstatus_Sequence()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        annotation="smooks-mapping-data truncable='true' required='true' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='sequence' namespace='##targetNamespace'"
 	 * @generated
 	 */
@@ -65,6 +67,7 @@ public interface Transferstatus extends EObject {
 	 * @see #setFirstAndLast(String)
 	 * @see org.milyn.edi.unedifact.v41.V41Package#getTransferstatus_FirstAndLast()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="smooks-mapping-data truncable='true' required='false' type='component' maxLength='1' minLength='0'"
 	 *        extendedMetaData="kind='element' name='firstAndLast' namespace='##targetNamespace'"
 	 * @generated
 	 */
