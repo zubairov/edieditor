@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<env:unEdifact xmlns:env="urn:org.milyn.edi.unedifact.v41">
+	<env:UNB xmlns:env="urn:org.milyn.edi.unedifact.v41">
+		<env:syntaxIdentifier>
+			<env:id>UNOA</env:id>
+			<env:versionNum>2</env:versionNum>
+		</env:syntaxIdentifier>
+		<env:sender>
+			<env:id>SENDER</env:id>
+		</env:sender>
+		<env:recipient>
+			<env:id>XXXXXLCTA</env:id>
+		</env:recipient>
+		<env:dateTime>
+			<env:date>100421</env:date>
+			<env:time>0437</env:time>
+		</env:dateTime>
+		<env:controlRef>1918</env:controlRef>
+	</env:UNB>
+	<env:interchangeMessage xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common" xmlns:cuscar="urn:org.milyn.edi.unedifact:un:d99a:cuscar" xmlns:env="urn:org.milyn.edi.unedifact.v41">
+		<env:UNH>
+			<env:messageRefNum>163477</env:messageRefNum>
+			<env:messageIdentifier>
+				<env:id>CUSCAR</env:id>
+				<env:versionNum>D</env:versionNum>
+				<env:releaseNum>99A</env:releaseNum>
+				<env:controllingAgencyCode>UN</env:controllingAgencyCode>
+				<env:associationAssignedCode>SCPRBL</env:associationAssignedCode>
+			</env:messageIdentifier>
+		</env:UNH>
+		<cuscar:CUSCAR xmlns:cuscar="urn:org.milyn.edi.unedifact:un:d99a:cuscar">
+			<cuscar:Beginning_of_message>
+				<c:DOCUMENT_MESSAGE_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Document_message_number>MOL-EU2-HFA-012W-XXXX8896514-01</c:Document_message_number>
+				</c:DOCUMENT_MESSAGE_IDENTIFICATION>
+				<c:Message_function__coded xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">VSA</c:Message_function__coded>
+			</cuscar:Beginning_of_message>
+			<cuscar:Date_time_period>
+				<c:DATE_TIME_PERIOD xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Date_time_period_qualifier>184</c:Date_time_period_qualifier>
+					<c:Date_time_period>20100429</c:Date_time_period>
+					<c:Date_time_period_format_qualifier>102</c:Date_time_period_format_qualifier>
+				</c:DATE_TIME_PERIOD>
+			</cuscar:Date_time_period>
+			<cuscar:Place_location_identification>
+				<c:Place_location_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">9</c:Place_location_qualifier>
+				<c:LOCATION_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Place_location_identification>CNYTN</c:Place_location_identification>
+				</c:LOCATION_IDENTIFICATION>
+			</cuscar:Place_location_identification>
+			<cuscar:Quantity>
+				<c:QUANTITY_DETAILS xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Quantity_qualifier>104</c:Quantity_qualifier>
+					<c:Quantity>1</c:Quantity>
+				</c:QUANTITY_DETAILS>
+			</cuscar:Quantity>
+			<cuscar:Segment_group_1>
+				<cuscar:Reference>
+					<c:REFERENCE xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Reference_qualifier>ACE</c:Reference_qualifier>
+						<c:Reference_number></c:Reference_number>
+						<c:Line_number>OHNE</c:Line_number>
+					</c:REFERENCE>
+				</cuscar:Reference>
+			</cuscar:Segment_group_1>
+			<cuscar:Segment_group_1>
+				<cuscar:Reference>
+					<c:REFERENCE xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Reference_qualifier>ABE</c:Reference_qualifier>
+						<c:Reference_number>400190754417</c:Reference_number>
+					</c:REFERENCE>
+				</cuscar:Reference>
+			</cuscar:Segment_group_1>
+			<cuscar:Segment_group_2>
+				<cuscar:Name_and_address>
+					<c:Party_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">RL</c:Party_qualifier>
+					<c:PARTY_IDENTIFICATION_DETAILS xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Party_identification>5209394</c:Party_identification>
+					</c:PARTY_IDENTIFICATION_DETAILS>
+				</cuscar:Name_and_address>
+			</cuscar:Segment_group_2>
+			<cuscar:Segment_group_4>
+				<cuscar:Details_of_transport>
+					<c:Transport_stage_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">13</c:Transport_stage_qualifier>
+					<c:TRANSPORT_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Id._of_means_of_transport_identification>02</c:Id._of_means_of_transport_identification>
+						<c:Code_list_qualifier></c:Code_list_qualifier>
+						<c:Code_list_responsible_agency__coded></c:Code_list_responsible_agency__coded>
+						<c:Id._of_the_means_of_transport>3EPF4</c:Id._of_the_means_of_transport>
+					</c:TRANSPORT_IDENTIFICATION>
+				</cuscar:Details_of_transport>
+				<cuscar:Date_time_period>
+					<c:DATE_TIME_PERIOD xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Date_time_period_qualifier>132</c:Date_time_period_qualifier>
+						<c:Date_time_period>20100429</c:Date_time_period>
+						<c:Date_time_period_format_qualifier>102</c:Date_time_period_format_qualifier>
+					</c:DATE_TIME_PERIOD>
+				</cuscar:Date_time_period>
+			</cuscar:Segment_group_4>
+			<cuscar:General_indicator>
+				<c:PROCESSING_INDICATOR xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Processing_indicator__coded>962</c:Processing_indicator__coded>
+					<c:Code_list_qualifier></c:Code_list_qualifier>
+					<c:Code_list_responsible_agency__coded></c:Code_list_responsible_agency__coded>
+					<c:Process_type_identification>J</c:Process_type_identification>
+				</c:PROCESSING_INDICATOR>
+			</cuscar:General_indicator>
+			<cuscar:Segment_group_7>
+				<cuscar:Consignment_information>
+					<c:Consolidation_item_number xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">1</c:Consolidation_item_number>
+					<c:DOCUMENT_MESSAGE_DETAILS xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Document_message_number></c:Document_message_number>
+						<c:Document_message_status__coded>1</c:Document_message_status__coded>
+					</c:DOCUMENT_MESSAGE_DETAILS>
+				</cuscar:Consignment_information>
+				<cuscar:Segment_group_8>
+					<cuscar:Reference>
+						<c:REFERENCE xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+							<c:Reference_qualifier>0</c:Reference_qualifier>
+						</c:REFERENCE>
+					</cuscar:Reference>
+					<cuscar:Place_location_identification>
+						<c:Place_location_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">113</c:Place_location_qualifier>
+						<c:LOCATION_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+							<c:Place_location_identification>CN</c:Place_location_identification>
+						</c:LOCATION_IDENTIFICATION>
+					</cuscar:Place_location_identification>
+					<cuscar:Place_location_identification>
+						<c:Place_location_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">8</c:Place_location_qualifier>
+						<c:LOCATION_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+							<c:Place_location_identification>XXXXX</c:Place_location_identification>
+						</c:LOCATION_IDENTIFICATION>
+					</cuscar:Place_location_identification>
+					<cuscar:General_indicator>
+						<c:PROCESSING_INDICATOR xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+							<c:Processing_indicator__coded>902</c:Processing_indicator__coded>
+							<c:Code_list_qualifier></c:Code_list_qualifier>
+							<c:Code_list_responsible_agency__coded></c:Code_list_responsible_agency__coded>
+							<c:Process_type_identification>N</c:Process_type_identification>
+						</c:PROCESSING_INDICATOR>
+					</cuscar:General_indicator>
+					<cuscar:Segment_group_14>
+						<cuscar:Goods_item_details>
+							<c:Goods_item_number xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">0</c:Goods_item_number>
+							<c:NUMBER_AND_TYPE_OF_PACKAGES_-_-1 xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Number_of_packages>4375</c:Number_of_packages>
+								<c:Type_of_packages_identification>CT</c:Type_of_packages_identification>
+							</c:NUMBER_AND_TYPE_OF_PACKAGES_-_-1>
+						</cuscar:Goods_item_details>
+						<cuscar:Free_text>
+							<c:Text_subject_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">TRA</c:Text_subject_qualifier>
+							<c:TEXT_LITERAL xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Free_text_-_-1>XXXX8896514</c:Free_text_-_-1>
+							</c:TEXT_LITERAL>
+						</cuscar:Free_text>
+						<cuscar:Free_text>
+							<c:Text_subject_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">AAA</c:Text_subject_qualifier>
+							<c:TEXT_LITERAL xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Free_text_-_-1>HOT AIR BRUSH ORDER  4500185467 MODEL  SC002E QTY  17500 PCS</c:Free_text_-_-1>
+							</c:TEXT_LITERAL>
+						</cuscar:Free_text>
+						<cuscar:Measurements>
+							<c:Measurement_purpose_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">WT</c:Measurement_purpose_qualifier>
+							<c:MEASUREMENT_DETAILS xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Property_measured__coded>G</c:Property_measured__coded>
+							</c:MEASUREMENT_DETAILS>
+							<c:VALUE_RANGE xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Measure_unit_qualifier>KGM</c:Measure_unit_qualifier>
+								<c:Measurement_value>10062.5</c:Measurement_value>
+							</c:VALUE_RANGE>
+						</cuscar:Measurements>
+					</cuscar:Segment_group_14>
+				</cuscar:Segment_group_8>
+			</cuscar:Segment_group_7>
+		</cuscar:CUSCAR>
+		<env:UNT>
+			<env:segmentCount>21</env:segmentCount>
+			<env:messageRefNum>163477</env:messageRefNum>
+		</env:UNT>
+	</env:interchangeMessage>
+	<env:interchangeMessage xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common" xmlns:cuscar="urn:org.milyn.edi.unedifact:un:d99a:cuscar" xmlns:env="urn:org.milyn.edi.unedifact.v41">
+		<env:UNH>
+			<env:messageRefNum>163478</env:messageRefNum>
+			<env:messageIdentifier>
+				<env:id>CUSCAR</env:id>
+				<env:versionNum>D</env:versionNum>
+				<env:releaseNum>99A</env:releaseNum>
+				<env:controllingAgencyCode>UN</env:controllingAgencyCode>
+				<env:associationAssignedCode>SCPRBL</env:associationAssignedCode>
+			</env:messageIdentifier>
+		</env:UNH>
+		<cuscar:CUSCAR xmlns:cuscar="urn:org.milyn.edi.unedifact:un:d99a:cuscar">
+			<cuscar:Beginning_of_message>
+				<c:DOCUMENT_MESSAGE_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Document_message_number>MOL-EU2-HFA-012W-XXXX5086746-01</c:Document_message_number>
+				</c:DOCUMENT_MESSAGE_IDENTIFICATION>
+				<c:Message_function__coded xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">VSA</c:Message_function__coded>
+			</cuscar:Beginning_of_message>
+			<cuscar:Date_time_period>
+				<c:DATE_TIME_PERIOD xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Date_time_period_qualifier>184</c:Date_time_period_qualifier>
+					<c:Date_time_period>20100429</c:Date_time_period>
+					<c:Date_time_period_format_qualifier>102</c:Date_time_period_format_qualifier>
+				</c:DATE_TIME_PERIOD>
+			</cuscar:Date_time_period>
+			<cuscar:Place_location_identification>
+				<c:Place_location_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">9</c:Place_location_qualifier>
+				<c:LOCATION_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Place_location_identification>KRPUS</c:Place_location_identification>
+				</c:LOCATION_IDENTIFICATION>
+			</cuscar:Place_location_identification>
+			<cuscar:Quantity>
+				<c:QUANTITY_DETAILS xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Quantity_qualifier>104</c:Quantity_qualifier>
+					<c:Quantity>1</c:Quantity>
+				</c:QUANTITY_DETAILS>
+			</cuscar:Quantity>
+			<cuscar:Segment_group_1>
+				<cuscar:Reference>
+					<c:REFERENCE xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Reference_qualifier>ACE</c:Reference_qualifier>
+						<c:Reference_number></c:Reference_number>
+						<c:Line_number>OHNE</c:Line_number>
+					</c:REFERENCE>
+				</cuscar:Reference>
+			</cuscar:Segment_group_1>
+			<cuscar:Segment_group_1>
+				<cuscar:Reference>
+					<c:REFERENCE xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Reference_qualifier>ABE</c:Reference_qualifier>
+						<c:Reference_number>400186967152</c:Reference_number>
+					</c:REFERENCE>
+				</cuscar:Reference>
+			</cuscar:Segment_group_1>
+			<cuscar:Segment_group_2>
+				<cuscar:Name_and_address>
+					<c:Party_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">RL</c:Party_qualifier>
+					<c:PARTY_IDENTIFICATION_DETAILS xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Party_identification>5209394</c:Party_identification>
+					</c:PARTY_IDENTIFICATION_DETAILS>
+				</cuscar:Name_and_address>
+			</cuscar:Segment_group_2>
+			<cuscar:Segment_group_4>
+				<cuscar:Details_of_transport>
+					<c:Transport_stage_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">13</c:Transport_stage_qualifier>
+					<c:TRANSPORT_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Id._of_means_of_transport_identification>02</c:Id._of_means_of_transport_identification>
+						<c:Code_list_qualifier></c:Code_list_qualifier>
+						<c:Code_list_responsible_agency__coded></c:Code_list_responsible_agency__coded>
+						<c:Id._of_the_means_of_transport>3EPF4</c:Id._of_the_means_of_transport>
+					</c:TRANSPORT_IDENTIFICATION>
+				</cuscar:Details_of_transport>
+				<cuscar:Date_time_period>
+					<c:DATE_TIME_PERIOD xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Date_time_period_qualifier>132</c:Date_time_period_qualifier>
+						<c:Date_time_period>20100429</c:Date_time_period>
+						<c:Date_time_period_format_qualifier>102</c:Date_time_period_format_qualifier>
+					</c:DATE_TIME_PERIOD>
+				</cuscar:Date_time_period>
+			</cuscar:Segment_group_4>
+			<cuscar:General_indicator>
+				<c:PROCESSING_INDICATOR xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+					<c:Processing_indicator__coded>962</c:Processing_indicator__coded>
+					<c:Code_list_qualifier></c:Code_list_qualifier>
+					<c:Code_list_responsible_agency__coded></c:Code_list_responsible_agency__coded>
+					<c:Process_type_identification>J</c:Process_type_identification>
+				</c:PROCESSING_INDICATOR>
+			</cuscar:General_indicator>
+			<cuscar:Segment_group_7>
+				<cuscar:Consignment_information>
+					<c:Consolidation_item_number xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">1</c:Consolidation_item_number>
+					<c:DOCUMENT_MESSAGE_DETAILS xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+						<c:Document_message_number></c:Document_message_number>
+						<c:Document_message_status__coded>1</c:Document_message_status__coded>
+					</c:DOCUMENT_MESSAGE_DETAILS>
+				</cuscar:Consignment_information>
+				<cuscar:Segment_group_8>
+					<cuscar:Reference>
+						<c:REFERENCE xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+							<c:Reference_qualifier>0</c:Reference_qualifier>
+						</c:REFERENCE>
+					</cuscar:Reference>
+					<cuscar:Place_location_identification>
+						<c:Place_location_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">113</c:Place_location_qualifier>
+						<c:LOCATION_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+							<c:Place_location_identification>TW</c:Place_location_identification>
+						</c:LOCATION_IDENTIFICATION>
+					</cuscar:Place_location_identification>
+					<cuscar:Place_location_identification>
+						<c:Place_location_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">8</c:Place_location_qualifier>
+						<c:LOCATION_IDENTIFICATION xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+							<c:Place_location_identification>XXXXX</c:Place_location_identification>
+						</c:LOCATION_IDENTIFICATION>
+					</cuscar:Place_location_identification>
+					<cuscar:General_indicator>
+						<c:PROCESSING_INDICATOR xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+							<c:Processing_indicator__coded>902</c:Processing_indicator__coded>
+							<c:Code_list_qualifier></c:Code_list_qualifier>
+							<c:Code_list_responsible_agency__coded></c:Code_list_responsible_agency__coded>
+							<c:Process_type_identification>N</c:Process_type_identification>
+						</c:PROCESSING_INDICATOR>
+					</cuscar:General_indicator>
+					<cuscar:Segment_group_14>
+						<cuscar:Goods_item_details>
+							<c:Goods_item_number xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">0</c:Goods_item_number>
+							<c:NUMBER_AND_TYPE_OF_PACKAGES_-_-1 xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Number_of_packages>19</c:Number_of_packages>
+								<c:Type_of_packages_identification></c:Type_of_packages_identification>
+							</c:NUMBER_AND_TYPE_OF_PACKAGES_-_-1>
+						</cuscar:Goods_item_details>
+						<cuscar:Free_text>
+							<c:Text_subject_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">TRA</c:Text_subject_qualifier>
+							<c:TEXT_LITERAL xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Free_text_-_-1>XXXX5086746</c:Free_text_-_-1>
+							</c:TEXT_LITERAL>
+						</cuscar:Free_text>
+						<cuscar:Free_text>
+							<c:Text_subject_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">AAA</c:Text_subject_qualifier>
+							<c:TEXT_LITERAL xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Free_text_-_-1>TISSUE PAPER DOUBLE COATED TAPE B GRADE DS(WHITE/WHITE)</c:Free_text_-_-1>
+							</c:TEXT_LITERAL>
+						</cuscar:Free_text>
+						<cuscar:Measurements>
+							<c:Measurement_purpose_qualifier xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">WT</c:Measurement_purpose_qualifier>
+							<c:MEASUREMENT_DETAILS xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Property_measured__coded>G</c:Property_measured__coded>
+							</c:MEASUREMENT_DETAILS>
+							<c:VALUE_RANGE xmlns:c="urn:org.milyn.edi.unedifact:un:d99a:common">
+								<c:Measure_unit_qualifier>KGM</c:Measure_unit_qualifier>
+								<c:Measurement_value>19950</c:Measurement_value>
+							</c:VALUE_RANGE>
+						</cuscar:Measurements>
+					</cuscar:Segment_group_14>
+				</cuscar:Segment_group_8>
+			</cuscar:Segment_group_7>
+		</cuscar:CUSCAR>
+		<env:UNT>
+			<env:segmentCount>21</env:segmentCount>
+			<env:messageRefNum>163478</env:messageRefNum>
+		</env:UNT>
+	</env:interchangeMessage>
+	<env:UNZ xmlns:env="urn:org.milyn.edi.unedifact.v41">
+		<env:controlCount>2</env:controlCount>
+		<env:controlRef>1918</env:controlRef>
+	</env:UNZ>
+</env:unEdifact>

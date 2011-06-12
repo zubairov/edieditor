@@ -20,10 +20,13 @@ Import-Package: org.apache.commons.lang;version="2.1.0",
  org.milyn.edi.unedifact.v41.util
 Export-Package: org.milyn.ect.ecore,
  org.smooks.edi.editor.resource
-Bundle-ClassPath: lib/milyn-commons-1.5-SNAPSHOT.jar,
+Bundle-ClassPath: lib/d99a-mapping.jar,
+ lib/milyn-commons-1.5-SNAPSHOT.jar,
  lib/milyn-edisax-parser-1.5-SNAPSHOT.jar,
  lib/milyn-smooks-core-1.5-SNAPSHOT.jar,
  lib/milyn-smooks-ect-1.5-SNAPSHOT.jar,
  lib/milyn-smooks-javabean-1.5-SNAPSHOT.jar,
  .
 Bundle-Vendor: Renat Zubairov
+Require-Bundle: org.junit;resolution:=optional,
+ org.apache.commons.logging;bundle-version="1.0.4";resolution:=optional
